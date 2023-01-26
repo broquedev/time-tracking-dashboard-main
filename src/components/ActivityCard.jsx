@@ -5,7 +5,7 @@ const ActivityCard = (props) => {
   return (
     <>
         <section className={styles.activity}>
-            <div className={styles.activity__card}>
+            <div className={styles.activity__bg}>
                 <div className={styles.activity__mask}>
                     <img src={props.image} alt="Image activity" />
                 </div>
@@ -29,4 +29,4 @@ const ActivityCard = (props) => {
   )
 }
 
-    export default ActivityCard;
+export default ActivityCard;

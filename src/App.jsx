@@ -2,10 +2,11 @@ import './App.css';
 import ProfileCard from './components/ProfileCard';
 import ActivityCard from './components/ActivityCard';
 import Data from './data.json';
-
-
+import { useState } from 'react'
 
 function App() {
+  const [ tFrame ] = useState(Data.timeframes);
+  console.log(tFrame);
   return (
     <div className="App">
       <ProfileCard /> 
